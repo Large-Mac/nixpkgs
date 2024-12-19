@@ -17,7 +17,24 @@
     in {
       homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        modules = [ ./home ];
+
+        extraSpecialArgs = {
+          inherit user;
+        };
+
+        modules = [
+          ./home
+          {
+            home = {
+              username = user;
+              homeDirectory = "/home/${user}";
+              stateVersion = "24.11";
+              packages = [ pkgs.home-manager ];
+            };
+
+            programs.home-manager.enable = true;
+          }
+        ];
       };
     };
 }
