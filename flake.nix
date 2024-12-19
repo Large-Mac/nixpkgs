@@ -1,5 +1,5 @@
 {
-  description = "My Portable Flake";
+  description = "My modular Nix config";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -17,26 +17,7 @@
     in {
       homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-
-        modules = [
-          {
-            home = {
-              username = {user};
-              homeDirectory = "/home/${user}";
-              packages = with pkgs; [
-                # Your packages here
-                firefox
-                git
-                neovim
-                ripgrep
-              ];
-
-              stateVersion = "24.11";
-            };
-
-            programs.home-manager.enable = true;
-          }
-        ];
+        modules = [ ./home ];
       };
     };
 }
