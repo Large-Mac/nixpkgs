@@ -21,7 +21,7 @@
         modules = [
           {
             home = {
-              username = user;
+              username = {user};
               homeDirectory = "/home/${user}";
               packages = with pkgs; [
                 # Your packages here
