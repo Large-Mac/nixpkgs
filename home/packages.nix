@@ -30,5 +30,10 @@
     nerd-fonts.symbols-only
     iosevka-comfy.comfy-wide
 
+    # WM programs
+
+    feh
+    picom
+
   ];
 }
