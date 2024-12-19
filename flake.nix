@@ -29,7 +29,6 @@
               username = user;
               homeDirectory = "/home/${user}";
               stateVersion = "24.11";
-              packages = [ pkgs.home-manager ];
             };
 
             programs.home-manager.enable = true;
