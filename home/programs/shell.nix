@@ -5,6 +5,7 @@
       shellAliases = {
         ll = "ls -l";
         update = "home-manager switch --flake .#neo";
+        doom = "~/.config/emacs/bin/doom";
       };
     };
 
