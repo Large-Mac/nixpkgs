@@ -4,7 +4,7 @@
       enable = true;
       shellAliases = {
         ll = "ls -l";
-        update = "sudo home-manager switch --flake .#neo";
+        update = "home-manager switch --flake .#neo";
         doom = "~/.config/emacs/bin/doom";
       };
     };

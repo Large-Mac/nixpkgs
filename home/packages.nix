@@ -19,6 +19,7 @@
     fd
     ripgrep
     yazi
+    yt-dlp
 
     # Fonts
 
