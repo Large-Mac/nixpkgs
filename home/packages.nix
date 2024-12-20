@@ -9,8 +9,6 @@
 
     kitty
     git
-    emacs
-    neovim
     tmux
     fzf
 
