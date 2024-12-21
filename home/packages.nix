@@ -26,6 +26,7 @@
     nerd-fonts.terminess-ttf
     nerd-fonts._3270
     nerd-fonts.fantasque-sans-mono 
+    nerd-fonts.jetbrains-mono
     nerd-fonts.symbols-only
     iosevka-comfy.comfy-wide
 
