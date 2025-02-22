@@ -1,6 +1,6 @@
 {
   home.sessionVariables = {
-    EDITOR = "emacs";
+    EDITOR = "nvim";
     TERMINAL = "kitty";
   };
 }

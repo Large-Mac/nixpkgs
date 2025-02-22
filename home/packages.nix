@@ -1,26 +1,23 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
     # Browsers
-
-    qutebrowser
-    firefox
+    # NOTE: Downloading browsers is not recommended, it takes up much more resources, just install it using your distro's package manager!
+    #qutebrowser
+    #firefox
+    #brave
 
     # Dev
-
-    kitty
     git
     tmux
-    fzf
 
     # Terminal Applications
     fzf
     fd
     ripgrep
     yazi
-    yt-dlp
+    #yt-dlp
 
     # Fonts
-
     nerd-fonts.iosevka
     nerd-fonts.hack
     nerd-fonts.terminess-ttf
@@ -29,11 +26,21 @@
     nerd-fonts.jetbrains-mono
     nerd-fonts.symbols-only
     iosevka-comfy.comfy-wide
+    # Cartograph CF
 
     # WM programs
+    #xwallpaper
+    #picom
+    devour
+    #pywal
+    #
 
-    feh
-    picom
+    # GUI Applications
+    keepassxc
+    zathura
 
+    # Text-Rendering Software
+    #asciidoc-full-with-plugins
+    #asciidoctor-with-extensions
   ];
 }
